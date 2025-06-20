@@ -51,6 +51,18 @@ const getCompanies = async () => {
 </template>
 
 <style scoped>
+:global(body) {
+  background-color: #fff;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
 .container {
   max-width: 800px;
   margin: 2rem auto;
@@ -81,7 +93,7 @@ button {
   border: none;
   border-radius: 8px;
   background-color: #42b983;
-  color: white;
+  color: #000;
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
