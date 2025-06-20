@@ -12,10 +12,10 @@ const getCompanies = async () => {
   companies.value = [];
 
   // The Vite proxy server will add the API key.
-  const url = '/api/companies?limit=100';
+  const url = '/api/companies';
 
   try {
-    // The API key is now added by the Vite proxy, so we don't send it from the browser.
+    // The API key is added by the serverless function on Vercel, so we don't send it from the browser.
     const response = await axios.get(url, {
       headers: {
         'Accept': 'application/json',
